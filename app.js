@@ -6,10 +6,7 @@ const colors = ["#DC143C", "#00FF00", "#FF1493", "#0000FF", "#4B0082"];
 
 const squaresNumber = 500;
 
-const getRandomColor = () => {
-  const i = Math.floor(Math.random() * colors.length);
-  return colors[i];
-};
+const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
 const setColor = (element) => {
   const color = getRandomColor();
